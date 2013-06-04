@@ -9,4 +9,4 @@ def func():
     print('x changed to', x)
 
 func()
-print('x is still', x)
+print('Now x is', x)
