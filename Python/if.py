@@ -12,6 +12,6 @@ while running == True:
     else:
         print("Guess is higher than the number!")
 else:
-	print("While loop is over")
+    print("While loop is over")
     
 print("Done")
