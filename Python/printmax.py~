@@ -9,6 +9,6 @@ def printmax(a,b):
     if x > y:
         return x
     else:
-        return y
+	    return y
 print('The max of two numbers is', printmax(3,5))
 print(printmax.__doc__)
