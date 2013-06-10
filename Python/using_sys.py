@@ -5,5 +5,5 @@ for i in sys.argv:
     print(i) 
     
 # Looks for modules in directories listed in sys.path variable.                   
-print('The PYTHONPATH is',sys.path) 
+print('The PYTHONPATH is', sys.path) 
 
