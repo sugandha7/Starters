@@ -1,11 +1,8 @@
-"""
-Consider the XY coordinate plane with Xindices from 0 to R1 and Yindices from 0 to C1.
+"""Consider the XY coordinate plane with Xindices from 0 to R1 and Yindices from 0 to C1.
 Each integer point (x,y) in the plane is given a color COLOR[x][y]. Color can be either red, green or blue.
 You wish to draw a triangle within this plane with endpoints as integers. Also, at least one side of the triangle 
 must be either a horizontal line, or a vertical line. There may be several triangles possible. Return the one with 
-the largest area. Basically, return the area of this triangle. All the vertices of the triangle should be of diff color
-
-"""
+the largest area. Basically, return the area of this triangle. All the vertices of the triangle should be of diff color"""
 
 
 
@@ -103,7 +100,7 @@ def calc_max_area(r, c , color):
 	return(max_area)
 
 max_area = calc_max_area(r, c, color)
-print "Max area is", Decimal(1)/Decimal(2)*Decimal(max_area
+print "Max area is", Decimal(1)/Decimal(2)*Decimal(max_area)
 
 
 
