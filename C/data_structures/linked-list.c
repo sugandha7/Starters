@@ -5,6 +5,10 @@ struct node
 	struct node* next;
 }*head;
 
+void insert_element(int);
+void delete_element(int);
+void display_list(struct node *);
+void size(struct node *);
 
 int main()
 {
@@ -22,7 +26,7 @@ int main()
 		printf("Enter your choice : ");
 		if(scanf("%d",&i)<=0){
 			printf("Enter only an Integer\n");
-			exit(0);
+			continue;
 		} 
 		else {
 			switch(i)
@@ -48,10 +52,11 @@ int main()
 	return 0;
 }
 
-void insert_element(num)
+void insert_element(int num)
 {
 	struct node  *temp, *ptr;
-	temp = (struct node*)malloc(sizeof(struct node));
+	//temp = (struct node*)malloc(sizeof(struct node));
+	temp = malloc(sizeof(struct node));
 	temp->data = num;
 	temp->next = NULL;
 	if(head == NULL)
@@ -72,7 +77,7 @@ void insert_element(num)
 
 
 
-void display_list(head)
+void display_list(struct node *head)
 {
 	struct node *temp = head;
 	if(head == NULL)
@@ -91,7 +96,7 @@ void display_list(head)
 	return;
 }
 
-void size(head)
+void size(struct node *head)
 {
 	struct node *temp = head;
 	int count = 0;
@@ -104,7 +109,7 @@ void size(head)
 	return;
 }
 
-void delete_element(num)
+void delete_element(int num)
 {
 	struct node *temp, *ptr;
 	ptr = head;
